@@ -1,0 +1,19 @@
+#Calculate the price of bond
+Coupon <- readline(prompt="Enter Coupon Amount:")
+FaceValue <- readline(prompt="Enter Face Value:")
+Years <- readline(prompt = "Enter number of years: ")
+c <- as.integer(Coupon)
+f <- as.integer(FaceValue)
+n <- as.integer(Years)
+sum <- as.integer(sum())
+for (i in 1:n) {
+j = (-0.5)*i*i
+h=exp(j)
+sum=sum+h
+}
+print(sum)
+l<-sum
+e=exp(-0.5*n^2)
+x = c * l + f * e
+y <- x
+cat("The price of bond is:", y)
